@@ -60,6 +60,7 @@ function gameOver() {
     }
     if (flag === 1 || flag1 === 2 || flag2 === 2) {
         finishFlag=1;
+        console.log("!");
         return true;
     }
     else return false;
@@ -123,50 +124,59 @@ function displayWinner(){
 }
 }
 
-if(!gameOver()){
+
 cell1.addEventListener('click', () => {
+    if(!gameOver()){
     makeMove(1,1,cell1);
     displayWinner();
-    
+    }
 });
 cell2.addEventListener('click', () => {
+    if(!gameOver()){
     makeMove(1,2,cell2);
     displayWinner();
-    
+    }
 });
 cell3.addEventListener('click', () => {
+    if(!gameOver()){
     makeMove(1,3,cell3);
     displayWinner();
+    }
     
 });
 cell4.addEventListener('click', () => {
+    if(!gameOver()){
     makeMove(2,1,cell4);
     displayWinner();
-    
+    }
 });
 cell5.addEventListener('click', () => {
+    if(!gameOver()){
     makeMove(2,2,cell5);
     displayWinner();
-    
+    }
 });
 cell6.addEventListener('click', () => {
+    if(!gameOver()){
     makeMove(2,3,cell6);
     displayWinner();
-    
+    }
 });
 cell7.addEventListener('click', () => {
+    if(!gameOver()){
     makeMove(3,1,cell7);
     displayWinner();
-    
+    }
 });
 cell8.addEventListener('click', () => {
+    if(!gameOver()){
     makeMove(3,2,cell8);
     displayWinner();
-    
+    }
 });
 cell9.addEventListener('click', () => {
+    if(!gameOver()){
     makeMove(3,3,cell9);
     displayWinner();
-    
+    }
 });
-}
